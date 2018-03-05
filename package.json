@@ -1,0 +1,27 @@
+{
+  "name": "@lsmoura/create-reducer",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sergio Moura",
+    "email": "sergio@moura.ca",
+    "url": "http://sergio.moura.ca"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "test": "babel-node __tests__"
+  },
+  "files": [
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsmoura/create-reducer.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
