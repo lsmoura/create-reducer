@@ -37,7 +37,7 @@ function addHandler(handlerObject, actionType, handler) {
     return handlerObject;
   }
 
-  console.error(`addHandler(): invalid handler for ${actionType}: ${typeof handerObject[actionType]}`);
+  console.error(`addHandler(): invalid handler for ${actionType}: ${typeof handlerObject[actionType]}`);
 
   return handlerObject;
 }
