@@ -99,7 +99,8 @@ function createReducer(initialState, handlers, wrapper) {
   const internalHandlers = generateHandlers(initialState, handlers);
   const innerWrapper = wrapper ? wrapper : dummyWrapper;
 
-  const reducer = (state, action) => {
+  const reducer = (stateParameter, action) => {
+    const state = stateParameter === undefined ? initialState : stateParameter;
     const handler = internalHandlers[action.type];
     if (!handler) return state;
 
